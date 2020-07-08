@@ -1,0 +1,59 @@
+<head>
+	<title>MedInform-Malaria</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="static/images/logo3.jpeg"/>
+<!--===============================================================================================-->
+	
+<!--===============================================================================================-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" hrexf="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<a href="/"><img height="42" width="42" src="static/images/logo3.jpeg" ></a>
+			<span class="contact100-form-title">Check For Malaria?</span>
+			<form class="contact100-form validate-form" action="/upload" method="post" enctype="multipart/form-data">
+				<div class="wrap-input100 validate-input" data-validate = "Valid image file is required: jpg or png">
+					<span class="label-input100">Select Only One Image File</span>
+					<input id="inp_file" type="file" name="file" >
+					<input id="inp_img" type="hidden" name="img" value="">
+					<span class="focus-input100"></span>
+				</div>
+				<div>
+					<img id='image-picked' class='no-display'>
+				</div>
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button type = "button" id = "submit_btn" class="contact100-form-btn">
+							<span>
+								Upload & Analyze Image
+							</span>
+						</button>
+					</div>
+					<a class="home-btn" href="https://medinform.tk/"><i class="fa fa-home"></i> Back to Home</a>
+				</div>
+			</form>
+		</div>
+	</div>
+<script src="static/js/utility.js"></script>
+</body>
+</html>
